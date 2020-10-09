@@ -1,0 +1,61 @@
+PHP
+--------------------------------------
+<?php
+
+  
+function removeChar($s, $c) 
+{ 
+  
+    $n = strlen($s); 
+    $count = 0; 
+    for ($i = $j = 0; $i < $n; $i++) 
+    { 
+    if ($s[$i] != $c) 
+        $s[$j++] = $s[$i]; 
+    else
+        $count++; 
+    } 
+    while($count--) 
+    {  
+        $s[$j++] = NULL; 
+    } 
+    echo $s; 
+} 
+  
+$s = "i love code"; 
+removeChar($s, 'o');
+
+--------------------------------------
+JAVASCRIPT
+
+var str = "i love code" ;	
+console.log(str.replace("o", " "));
+
+
+-------------------------------------
+PYTHON
+
+def removeChar(s, c) : 
+    counts = s.count(c) 
+
+    s = list(s) 
+
+    while counts : 
+
+        s.remove(c) 
+
+        counts -= 1
+
+    s = '' . join(s) 
+      
+    print(s) 
+  
+if __name__ == '__main__' : 
+      
+    s = "i love code"
+    removeChar(s,'o') 
+
+
+ 
+
+

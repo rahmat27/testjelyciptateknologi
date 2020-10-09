@@ -1,0 +1,81 @@
+PHP
+-------------------------------
+<?php
+function uniqueCharacters($str) 
+{ 
+    for($i=0;$i<strlen($str); $i++)
+    {
+        for($j=$i+1;$j<strlen($str);$j++) 
+        {
+            if($str[$i]==$str[$j])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+ 
+$str = "I Love You";
+if(uniqueCharacters($str)) 
+{
+    echo "The String ", $str,
+          " has all unique characters\n";
+}
+else
+{
+    echo "The String ", $str, 
+         " has duplicate characters\n";
+}
+
+>
+
+-------------------------------
+Javascript
+
+
+function uniqueCharacters(str) 
+{   var len = str.length;
+    for(i=0;i<len; i++)
+    {
+        for(j=i+1;j<len;j++) 
+        {
+            if(str[i]==str[j])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+ 
+var str = "I Love You";
+if(uniqueCharacters(str)) 
+{
+    console.log("The String ", str,
+          " has all unique characters\n");
+}
+else
+{
+    console.log("The String ", str, 
+         " has duplicate characters\n");
+}
+---------------------------------------
+PYTHON
+
+def uniqueCharacters(str):
+
+    for i in range(len(str)):
+        for j in range(i + 1,len(str)): 
+            if(str[i] == str[j]):
+                return False;
+
+    return True;
+
+str = "I Love You";
+ 
+if(uniqueCharacters(str)):
+    print("The String ", str," has all unique characters");
+else:
+    print("The String ", str, " has duplicate characters");
+

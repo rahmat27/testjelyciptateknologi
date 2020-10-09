@@ -1,0 +1,55 @@
+PHP
+-----------------------------------
+<?php
+
+function frequency($a, $n, $x) 
+{ 
+    $count = 0; 
+    for ($i = 0; $i < $n; $i++) 
+    if ($a[$i] == $x)  
+        $count++; 
+    return $count; 
+} 
+  
+    $a = array ("Miaw","miaw","miaw","miaw","miaww"); 
+    $x = "miaw"; 
+    $n = sizeof($a); 
+    echo frequency($a, $n, $x); 
+  
+?> 
+
+>
+
+JAVASCRIT
+-----------------------------------
+
+function frequency(a, n, x) 
+{ 
+    var count = 0; 
+    for (i = 0; i < n; i++) 
+    if (a[i] == x)  
+        count++; 
+    return count; 
+} 
+  
+var a = ["Miaw","miaw","miaw","miaw","miaww"]; 
+var x = "miaw"; 
+var n = a.length; 
+console.log(frequency(a,n,x)); 
+
+
+
+PYTHON
+---------------------------------------------
+
+def frequency(a, x): 
+    count = 0
+      
+    for i in a: 
+        if i == x: count += 1
+    return count 
+  
+# Driver program 
+a = ["Miaw","miaw","miaw","miaw","miaww"]
+x = "miaw"
+print(frequency(a, x)) 

@@ -1,0 +1,42 @@
+PHP
+------------------
+<?php
+function factorial($n) 
+{ 
+    if ($n == 0) 
+        return 1; 
+    return $n * factorial($n - 1); 
+} 
+  
+$num = 5; 
+echo "Factorial of ", $num, " is ", factorial($num); 
+
+
+-------------------
+JAVASCRIPT
+
+function factorial(n) {
+  if(n == 0)
+  return 1;
+
+  return n * factorial(n -1);
+}
+
+var num = 5 ;
+console.log("Factorial of ", num, " is ", factorial(num));
+
+
+------------------
+PYTHON
+
+def factorial(n): 
+       
+    if n == 0: 
+        return 1
+      
+    return n * factorial(n-1) 
+   
+# Driver Code 
+num = 5; 
+print("Factorial of", num, "is", 
+factorial(num)) 

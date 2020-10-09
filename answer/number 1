@@ -1,0 +1,43 @@
+<?php
+function pattern($n) 
+{  
+    for ($i=1;$i<$n;$i++) 
+    { 
+        for ($j=1;$j<$i+1;$j++) 
+        { 
+            echo "*"; 
+        } 
+        echo "\n" ; 
+    } 
+} 
+
+$n=5; 
+pattern($n); 
+?>
+------------------------------
+JAVASCRIPT
+
+function patern(n) {
+  for(var i=1;i<=n;i++){
+    for(var j=1;j<=i;j++)
+    {
+    console.log("*");
+    }
+  console.log('');
+  }
+}
+
+var n = 5 ;
+patern(n);
+
+------------------------------
+phyton
+
+def pattern(n): 
+     
+    for i in range (1, n+1): 
+        for j in range (1, i+1): 
+            print ("*" , end = "")
+        print ()
+
+pattern(5) 

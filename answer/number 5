@@ -1,0 +1,24 @@
+PHP
+--------------------------
+<?php
+function replace($c) 
+{ 
+    return str_replace(' ', '%20', $c);
+}
+
+$sentence = "gold money power";
+echo "result of replace is ", replace($sentence);
+
+
+--------------------------
+JAVASCRIPT
+var string = "gold money power";    
+console.log(string.replace(" ", "%20"));
+
+---------------------------
+PYTHON
+
+string = "gold money power"    
+print(string.replace(" ", "%20")) 
+
+
